@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Changer la police de caractères en roboto. */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* barre de nav */
+.navBar {
+  padding: 10px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  li {
+    list-style: none;
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.607);
+}
+/* subclass */
+.nav-link:hover {
+  color: rgb(255, 0, 0);
+}
+.brand {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(55, 0, 255);
+}
+
+/* centrer un bloc */
+.bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#resume {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* form en grid */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  width: 50%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/* footer */
+.site-footer {
+  background-color: rgba(127, 255, 212, 0.432);
+  padding: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/* query media pour le coté responsive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(220, 226, 43);
+    img {
+      display: none;
+    }
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  body {
+    background-color: rgb(194, 193, 191);
+  }
+}
